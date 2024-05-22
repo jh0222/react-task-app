@@ -79,9 +79,6 @@ export const deleteBoardButton = style({
   }
 })
 
-
-
-
 export const loggerButton = style({
   border: 'none',
   borderRadius: 5,
