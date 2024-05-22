@@ -24,7 +24,6 @@ export const listButton = style({
   marginTop: vars.spacing.small,
   color: vars.color.brightText,
   fontSize: vars.fontSizing.T3,
-  padding: vars.spacing.medium,
   backgroundColor: vars.color.mainFaded,
   paddingTop: vars.spacing.small,
   paddingBottom: vars.spacing.small,

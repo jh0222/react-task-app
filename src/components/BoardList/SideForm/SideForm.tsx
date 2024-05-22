@@ -7,12 +7,10 @@ import { addLog } from '../../../store/slices/loggerSlice'
 import { v4 as uuidv4 } from 'uuid'
 
 type TSideFormProps = {
-  inputRef: React.RefObject<HTMLInputElement>,
   setIsFormOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const SideForm: FC<TSideFormProps>= ({
-  inputRef,
   setIsFormOpen
 }) => {
   const [inputText, setInputText] = useState('')
@@ -34,7 +32,7 @@ const SideForm: FC<TSideFormProps>= ({
             boardId: uuidv4(), 
             boardName: inputText,
             lists: []
-          }
+          } 
         })
       )
       dispatch(
@@ -46,13 +44,12 @@ const SideForm: FC<TSideFormProps>= ({
         })
       )
     }
-  }
+  } 
 
   return (
     <div className={sideForm}>
       <input 
         className={input}
-        ref={inputRef}
         autoFocus
         type='text'
         placeholder='새로운 게시판 등록하기'

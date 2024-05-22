@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { IList } from '../../types'
 import List from '../List/List'
 import ActionButton from '../ActionButton/ActionButton'
@@ -16,13 +16,13 @@ const ListsContainer: FC<TListContainerProps> = ({
   return (
     <div className={listsContainer}>
       {
-        lists.map(list => {
+        lists.map(list => (
           <List
             key={list.listId} 
             list={list} 
             boardId={boardId}
           />
-        })
+        ))
       }
       <ActionButton 
         boardId={boardId} 

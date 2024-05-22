@@ -16,7 +16,7 @@ export const input = style({
 export const icon = style({
   color: vars.color.brightText,
   fontSize: vars.fontSizing.T2,
-  marginRight: vars.spacing.medium,
+  marginLeft: vars.spacing.medium,
   cursor: 'pointer',
   ":hover": {
     opacity: 0.8
